@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THBOT Trade Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>THBOT Trade Journal</h1>
+  <div id="app">
+    <form id="trade-form">
+      <input type="text" id="symbol" placeholder="Symbol" required>
+      <input type="number" id="entry" placeholder="Entry Price" step="0.01" required>
+      <input type="number" id="exit" placeholder="Exit Price" step="0.01" required>
+      <input type="text" id="notes" placeholder="Notes">
+      <button type="submit">Save Trade</button>
+    </form>
+    <ul id="trade-list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
